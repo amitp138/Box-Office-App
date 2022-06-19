@@ -1,8 +1,9 @@
 import React from 'react'
+import MainPageLayout from '../components/MainPageLayout'
 
 const Starrer = () => {
   return (
-    <div>Starrer</div>
+    <MainPageLayout>Starrer</MainPageLayout>
   )
 }
 

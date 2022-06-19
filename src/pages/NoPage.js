@@ -1,8 +1,9 @@
 import React from 'react'
+import MainPageLayout from '../components/MainPageLayout'
 
 const NoPage = () => {
   return (
-    <div>404 page not found</div>
+    <MainPageLayout>404 page not found</MainPageLayout>
   )
 }
 
