@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const FlexGrid = styled.div`
   display: flex;
-  flex-directioin:row;
   justify-content: center;
   flex-wrap: wrap;
 `;
@@ -35,6 +34,7 @@ export const SearchCard = styled.div`
     margin: 0;
   }
 `;
+
 export const Star = styled.div`
   display: inline-block;
   width: 18px;
