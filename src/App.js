@@ -4,9 +4,19 @@ import Show from './pages/Show'
 import Home from './pages/Home';
 import NoPage from './pages/NoPage';
 import Starred from './pages/Starred';
+import { ThemeProvider } from 'styled-components';
+
+const theme = {
+  mainColors: {
+    blue: '#2400ff',
+    gray: '#c6c6c6',
+    dark: '#353535',
+  },
+};
 
 function App() {
   return (
+    <ThemeProvider theme={theme}>
   
      
       <Routes>
@@ -15,6 +25,7 @@ function App() {
        < Route exact path='/show/:id' element={<Show/>}/>
        <Route path='*' element={<NoPage/>}/>
       </Routes>
+      </ThemeProvider>
 
   );
 }
